@@ -1,8 +1,8 @@
-# The Simplest Example of a Useful Chrome Browser Extension
+# The Simplest RTL Chrome Extension
 
 Get data from the user's active tab, using minimal permissions to ensure shorter review-and-publish cycles.
 
-## To test out this extension
+##How to use:
 
 1. Clone this repository to your local machine.
 2. Visit `chrome://extensions` in your (Google Chrome) browser
