@@ -1,7 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // null here defaults to active tab of current window
+
   chrome.tabs.executeScript(null, {
     code: `
+      
+      document.documentElement.setAttribute("dir", "rtl");
+      
       document.querySelector("title").innerText;
     `
   }, response => {
@@ -11,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
       console.log("Could not get data from page.");
       return;
     }
-
+    
     document.getElementById("activeTabTitle").innerText = pageData;
   });
 });
